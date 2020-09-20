@@ -387,8 +387,22 @@ void dozd_kodum_samte(int index_k, int index_p, int R_ofknower, int C_ofknower, 
                 if(jadval_game[R_ofknower-1][C_ofknower+1]<0){
                     in_dozd_ro_begir((jadval_game[R_ofknower-1][C_ofknower+1]+1)*-1);
                     if(aya_hameye_dozdharo_gereftan()==1){
-                        printf("bazi ghabl az tamum shodn in sheklie:\n");
-                        print();
+                        printf("before the game ends:\n");
+                        for (int i=0; i<n; i++){
+                            for(int j=0; j<m; j++){
+                                if(jadval_game[i][j]<0){
+                                    // printf("    T");
+                                    colorme(jadval_game[i][j]);
+                                }
+                                else if(jadval_game[i][j]==0){
+                                    printf("    -");
+                                }
+                                else if(jadval_game[i][j]>0){
+                                    colorme(jadval_game[i][j]);
+                                }
+                            }
+                            printf("\n");
+                        }
                         exit(0);
                     }
                 }
@@ -1246,5 +1260,6 @@ int main(){
         }
 
     }
+    print();
     return 0;
 }
