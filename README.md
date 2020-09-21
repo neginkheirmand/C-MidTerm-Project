@@ -1,9 +1,9 @@
 
 **Warning:** This was my **first** -official- Project.
 ## Features
-- weird commit comments
+- weird commits 
 - cringy comments
-- worst variable name you could ever imagine
+- worst variable names you could ever imagine
 
 ### Links
 
